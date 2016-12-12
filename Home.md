@@ -1,5 +1,5 @@
 ### Estrutura
-.
+```.
 ├── controller
 │   └── base.php
 ├── model
@@ -9,6 +9,7 @@
 │   └── session.php
 ├── pulse.php
 └── README.md
+```
 
 ## Uso
 Em cada view (página) do seu projeto inclua uma chamada para  `heart/pulse`.
