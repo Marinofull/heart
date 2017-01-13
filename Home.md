@@ -7,7 +7,14 @@
 ├── helpers
 │   ├── print.php
 │   └── session.php
+├── sos
+│   ├── drugstore.php
+│   ├── error.php
+│   └── ops.php
 ├── pulse.php
+├── .vBlood
+├── rAtrium.php
+├── lAtrium.php
 └── README.md
 ```
 
@@ -35,7 +42,8 @@ Caso uma view queira tratar de mais de uma entidade, o heart saberá o que fazer
 <?php require_once('../heart/pulse.php'); ?>
 ```
 
-O que o `heart/pulse` faz é fazer o `require_once` de todas as controllers solicitadas, sendo que caso o nome do arquivo esteja dentro do padrão, ele vai buscar a controller que tem relação com o nome do arquivo em que foi chamado. Além disso, ele faz o `require_once` de todas as helpers do `heart/helpers`, o que te permite, dentre outras coisas, definir permissões de acesso para as páginas.
+O `heart/pulse` realiza o `require_once` de todas as controllers solicitadas e, caso o nome do arquivo esteja dentro do padrão, ele busca a controller que tem relação com o nome do arquivo em que foi chamado. Além disso, ele faz o `require_once` de todas as helpers do `heart/helpers`, o que te permite, dentre outras coisas, definir permissões de acesso para as páginas.
+
 ### Models
 Nas models, siga o padrão:
 ```php
