@@ -33,7 +33,7 @@ Isso irá carregar todos os arquivos necessários para trabalhar naquela view, c
   - **Class:** Entity_controller
 - **Model**:
   - **File**: entity.php
-  - **Class:**Entity
+  - **Class**: Entity
 - **DB Table**: entitys
 
 Caso uma view queira tratar de mais de uma entidade, o heart saberá o que fazer caso se utilize:
